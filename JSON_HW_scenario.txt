@@ -1,0 +1,80 @@
+JSON
+1.	Создать внешний репозиторий c названием JSON.
+GitHub/Repositories/New/JSON2
+* * *
+2.	Клонировать репозиторий JSON на локальный компьютер.
+git clone git@github.com:Zezova/JSON2.git
+* * *
+3.	Внутри локального JSON создать файл “new.json”.
+cd JSON2/
+touch new.json
+* * *
+4.	Добавить файл под гит.
+git add new.json
+* * *
+5.	Закоммитить файл.
+git commit -m "Git_JSON2"
+* * *
+6.	Отправить файл на внешний GitHub репозиторий.
+git push
+* * *
+7.	Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+{
+	"FullName" : "Ekaterina Zezova",
+	"age" : 33,
+	"number of pets" : "zero",
+	"future desired salary" : 1000
+}
+* * *
+8.	Отправить изменения на внешний репозиторий.
+git status
+git add new.json
+git commit -m "Some new edits"
+git push
+* * *
+9.	Создать файл preferences.json.
+touch preferences.json
+* * *
+10.	В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+vim preferences.json
+{
+	"Favourite movie" : "Pirates of the Carribean",
+	"Favourite serial" : "Friends",
+	"Favourite food" : "pizza",
+	"Favourite season" : "autumn",
+	"Country to be visited" : "Canada"
+}
+* * *
+11.	Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON.
+touch skills.json
+vim skills.json
+{
+	“skills” : “magic”
+}
+* * *
+12.	Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -m "new files"
+git push
+* * *
+13.	На веб интерфейсе создать файл bug_report.json.
+GitHub/Create new file/bug_report.json
+* * *
+14.	Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+GitHub/Commit new file
+* * *
+15.	На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+GitHub/Edit file
+{
+	“Bug number 1” : “the site doesn’t open in Google Chrome”,
+	“Bug number 2” : “window downloads for 15 minutes”
+}
+* * *
+16.	Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+GitHub/Commit changes
+* * *
+17.	Синхронизировать внешний и локальный репозиторий JSON.
+git status
+git pull
+* * *
